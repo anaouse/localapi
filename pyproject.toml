@@ -5,5 +5,12 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "readchar>=4.2.1",
     "rich>=14.3.3",
 ]
+
+[tool.setuptools]
+packages = ["app"]
+
+[project.scripts]
+your_exe = "app.main:main"
